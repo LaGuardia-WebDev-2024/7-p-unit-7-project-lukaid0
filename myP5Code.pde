@@ -4,18 +4,39 @@ void setup() {
 }
 
 //🎯Variable Declarations Go Here
-
-
+var boomheight=0
+var boomwidthyellow=0
+var boomwidthred=0
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
  
   background(255,255,255,0);
-  
+  //explosion
+fill(220,200,50)
+ellipse( 300,280,boomwidthyellow,boomheight);
+fill(200,10,10)
+ellipse(300,270,boomwidthred,boomheight);
+
+//small child head
+fill(255,178,102)
+ellipse(300,150,50,50);
+fill(0,0,0)
+ellipse(290,144,5,5);
+ellipse(309,144,5,5);
+
+//small child body
+rect(285,175,32,100);
+rect(232,190,70,20);
+rect(300,190,70,20);
+rect(270,275,20,80);
+rect(315,275,20,80);
 
 
 
 
-
+if(mousePressed)boomheight=boomheight+10
+if(mousePressed)boomwidthyellow=boomwidthyellow+11
+if(mousePressed)boomwidthred=boomwidthred+8
   //Show x y values when mousepressed
   if(mousePressed){showXYPositions();}
 
