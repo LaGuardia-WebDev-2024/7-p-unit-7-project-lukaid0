@@ -11,11 +11,7 @@ var boomwidthred=0
 draw = function(){
  
   background(255,255,255,0);
-  //explosion
-fill(220,200,50)
-ellipse( 300,280,boomwidthyellow,boomheight);
-fill(200,10,10)
-ellipse(300,270,boomwidthred,boomheight);
+  
 
 //small child head
 fill(255,178,102)
@@ -30,8 +26,13 @@ rect(232,190,70,20);
 rect(300,190,70,20);
 rect(270,275,20,80);
 rect(315,275,20,80);
+ triangle(302, 243, 271,276, 335, 277);
 
-
+//explosion
+fill(220,200,50)
+ellipse( 300,280,boomwidthyellow,boomheight);
+fill(200,10,10)
+ellipse(300,270,boomwidthred,boomheight);
 
 
 if(mousePressed)boomheight=boomheight+10
