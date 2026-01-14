@@ -34,7 +34,7 @@ ellipse( 300,280,boomwidthyellow,boomheight);
 fill(200,10,10)
 ellipse(300,270,boomwidthred,boomheight);
 
-
+if(boomheight>1400){boomheight=0;boomwidthred=0;boomwidthyellow=0}
 if(mousePressed)boomheight=boomheight+10
 if(mousePressed)boomwidthyellow=boomwidthyellow+11
 if(mousePressed)boomwidthred=boomwidthred+8
